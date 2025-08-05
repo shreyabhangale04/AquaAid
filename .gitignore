@@ -1,1 +1,4 @@
-public/images
+public/images/
+node_modules/
+*.log
+.env
