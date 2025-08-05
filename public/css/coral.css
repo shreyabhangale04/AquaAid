@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e3f2fd;
+}
+
+/* Coral Reef Section */
+.reef-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Video background */
+#coral-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Ensures video stays behind all other content */
+    filter: blur(0.5px) brightness(1.0);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+    color: #000000;
+    max-width: 700px;
+    padding: 20px;
+    font-size: 20px;
+   
+    
+}
+
+.content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+   
+}
+
+.content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Scroll Down Arrow */
+.scroll-arrow {
+    display: inline-block;
+    font-size: 3em;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.scroll-arrow:hover {
+    color: #000000;
+}
+
+.spacer {
+    height: 50px;
+}
+
+/* Boxes Section */
+.boxes-section {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    margin-top: 80px;
+    margin-bottom: 60px;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0056e0;
+    text-align: center;
+}
+
+.box ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.box ul li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Advantages and Threats Box Styling */
+.advantages-box {
+    border-left: 5px solid #26a69a;
+}
+
+.threats-box {
+    border-left: 5px solid #ef5350;
+}
+
+/* Locations Section */
+.locations-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5%;
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.location-box {
+    flex: 1;
+    max-width: 300px;
+    margin: 10px;
+}
+
+.location-box img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.location-box h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.location-box p {
+    font-size: 1em;
+    color: #005f86;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .boxes-section {
+        flex-direction: column;
+    }
+    
+    .location-box {
+        max-width: 90%;
+    }
+
+    .location-box img {
+        width: 200px;
+    }
+}
+
+.coral-reef-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+   
+}
+
+.reef-image img {
+    width: 90%;
+    height: 100vh;
+    object-fit: cover;
+    margin-top: 100px;
+    
+}
+
+.reef-content {
+    width: 65%;
+    padding: 20px;
+    margin-top: 30px;
+    
+}
+
+.reef-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.reef-content p, ul {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #002b64;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .coral-reef-section {
+        flex-direction: column;
+    }
+
+    .reef-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .reef-content {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Footer Styling */
+.footer {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+}
+
+.footer-bottom {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+}

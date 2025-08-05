@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("/images/water.jpg");
+  background-size: cover; /* Makes sure the background image covers the whole area */
+  background-position: center; /* Centers the image */
+}
+
+.contact {
+  min-height: 100vh;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px; /* Increased to allow for more space */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container h2 {
+  font-size: 36px;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.contact .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: start;
+}
+
+.contact .form {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.contact .form h3,
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc; /* Added border */
+  background-color: #f8f9fa; /* Corrected background-color */
+  color: #333;
+  font-size: 16px; /* Added font size for consistency */
+}
+
+input:focus textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px #bbb;
+}
+
+button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0056e0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s, ease;
+}
+
+button:hover {
+  background-color: #0056e0;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.contact-info i {
+  color: #0056e0;
+  margin-right: 10px;
+}

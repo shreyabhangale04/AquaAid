@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 5%;
+  background-color: white;
+}
+
+.brand-name {
+  font-size: 2em; /* Larger, eye-catching size */
+  font-weight: bold;
+  color: #0056e0; /* Blue color matching the overall theme */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.brand-name:hover {
+  color: #003f99; /* A slight hover effect to make it interactive */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Call Icon */
+.call-icon a {
+  color: #0056e0;
+  font-size: 24px;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url("/images/image2.jpg") no-repeat center center/cover;
+  position: relative;
+  margin-top: 80px;
+}
+
+.hero-content {
+  z-index: 1;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+/* Scroll Down Button Styles */
+.scroll-down-btn {
+  font-size: 3em;
+  color: #0056e0;
+  margin-top: 20px;
+  display: inline-block;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.scroll-down-btn:hover {
+  color: #003f99;
+}
+
+/* Bounce effect for the arrow */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* About Section (Objective Content) */
+.about-section {
+  padding: 5% 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  min-height: 90vh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.about-text {
+  padding: 40px;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 2.5em;
+  color: #0056e0;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0056e0;
+  color: white;
+  font-size: 1em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}

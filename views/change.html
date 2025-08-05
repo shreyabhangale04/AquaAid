@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Water Conservation</title>
+    <link rel="stylesheet" href="/css/change.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for the downward arrow icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <h1 class="brand-name">Deepwaters.</h1>
+        </div>
+        <ul class="nav-links">
+          <li><a href="/change">Home</a></li>
+          <li><a href="/action">Take Action</a></li>
+          <li><a href="/goal">Goals</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/login">Login</a></li>
+        </ul>
+        <div class="call-icon">
+          <a href="/contact"><i class="fas fa-phone"></i></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-content">
+        <h1>WATER FOR EVERYONE</h1>
+        <p>
+          Our company has been the leading supplier of high-quality bottled
+          spring water since 1950.
+        </p>
+        <a href="#our-objectives" class="scroll-down-btn"
+          ><i class="fas fa-arrow-down"></i
+        ></a>
+      </div>
+    </section>
+
+    <section id="our-objectives" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="/images/image3.jpg" alt="Water Conservation Image" />
+        </div>
+        <div class="about-text">
+          <h2>Our Objective</h2>
+          <p>
+            At <strong>Deepwaters</strong>, we are committed to raising
+            awareness about the importance of water conservation and protecting
+            aquatic ecosystems in India. Our mission is to educate the public,
+            promote sustainable practices, and drive real change through
+            community engagement and conservation initiatives.
+          </p>
+          <p>
+            Join us in our journey to make water accessible to all while
+            ensuring the preservation of life below water. Together, we can
+            protect our most precious resource and help secure a sustainable
+            future for generations to come.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Embed the facts.html -->
+    <section id="facts-section">
+      <iframe src="/facts" width="100%" height="600px" frameborder="0"></iframe>
+    </section>
+
+    <!-- Embed the initiative.html -->
+    <section id="initiative-section">
+      <iframe
+        src="/initiative"
+        width="100%"
+        height="600px"
+        frameborder="0"
+      ></iframe>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Deepwaters. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+      // Smooth scrolling effect
+      document
+        .querySelector(".scroll-down-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector("#our-objectives").scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+    </script>
+  </body>
+</html>

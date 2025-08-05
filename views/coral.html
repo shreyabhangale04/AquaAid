@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coral Reef Initiatives</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/coral.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Coral Reef Initiatives Section -->
+    <section class="coral-reef-section">
+      <video autoplay muted loop id="coral-video">
+        <source src="/images/coral.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="overlay">
+        <div class="content">
+          <h1>Save Our Coral Reefs</h1>
+          <p>
+            Coral reefs are the rainforests of the sea, home to 25% of all
+            marine life. Join us in our fight to protect them.
+          </p>
+          <a href="#boxes-section" class="scroll-arrow"
+            ><i class="fas fa-arrow-down"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="coral-reef-section">
+      <div class="reef-image">
+        <img src="/images/coralsbg.jpg" alt="Coral Reefs Beach" />
+      </div>
+      <div class="reef-content">
+        <h1>Coral Reefs</h1>
+        <p>
+          Coral reefs are the rainforests of the sea, home to 25% of all marine
+          life. They offer countless benefits to our ecosystems and are an
+          essential part of coastal protection and biodiversity.
+          <br /><br />
+          Coral reefs in India are one of the most ancient and dynamic
+          ecosystems. India has about 7517 km of coastline including islands,
+          with the mainland coast at 6100 km. These reefs are mainly in the
+          Andaman and Nicobar Islands, Gulf of Mannar, Gulf of Kutch, Palk
+          Strait, and the Lakshadweep islands. All are fringing reefs except
+          Lakshadweep which are atolls. Patchy corals are also found along the
+          intertidal areas of the central west coast like Ratnagiri, Gaveshani
+          Bank, etc.
+          <br /><br />
+          Hermatypic corals are present along the sea shore from Kollam in
+          Kerala to Enayam Puthenthurai in Tamil Nadu.
+        </p>
+        <h2>How are they formed?</h2>
+        <p>
+          Coral polyps are small, fleshy sea anemones found in tropical waters.
+          They live in a symbiotic relationship with microscopic algae
+          (Zooxanthellae). The algae perform photosynthesis and feed the polyps;
+          the polyps protect the algae.
+          <br />
+          Coral reefs form when coral larvae settle on hard surfaces near
+          coastlines, aided by sedimentation, compaction, and cementation of
+          coral skeletons.
+        </p>
+      </div>
+    </section>
+
+    <!-- Spacer Section -->
+    <div class="spacer" id="boxes-section"></div>
+
+    <!-- Boxes Section -->
+    <section class="boxes-section">
+      <div class="box advantages-box">
+        <h3>Advantages of Coral Reefs</h3>
+        <ul>
+          <li>
+            <strong>Marine Biodiversity:</strong> Shelter and food for marine
+            species.
+          </li>
+          <li>
+            <strong>Coastal Protection:</strong> Barrier from waves and storms.
+          </li>
+          <li><strong>Tourism and Economy:</strong> Drives economic growth.</li>
+          <li>
+            <strong>Medicinal Uses:</strong> Marine organisms for medical
+            research.
+          </li>
+        </ul>
+      </div>
+
+      <div class="box threats-box">
+        <h3>Threats to Coral Reefs</h3>
+        <ul>
+          <li>
+            <strong>Climate Change:</strong> Coral bleaching due to rising
+            temperatures.
+          </li>
+          <li><strong>Overfishing:</strong> Disrupts coral ecosystems.</li>
+          <li><strong>Pollution:</strong> Waste and plastics damage reefs.</li>
+          <li>
+            <strong>Ocean Acidification:</strong> CO₂ weakens coral skeletons.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Locations Section -->
+    <h1 style="text-align: center; color: black">Coral reefs found in India</h1>
+    <section class="locations-section">
+      <div class="location-box">
+        <img src="/images/karnataka.jpg" alt="Karnataka" />
+        <h3>Karnataka</h3>
+        <p>
+          Our work includes stranding response, ghost net removal, and awareness
+          activities along this understudied coastline.
+        </p>
+      </div>
+      <div class="location-box">
+        <img src="/images/goa.jpg" alt="Goa" />
+        <h3>Goa</h3>
+        <p>
+          Tourism-heavy, marine-rich Goa sees veterinary support, awareness, and
+          coastal research from our team.
+        </p>
+      </div>
+      <div class="location-box">
+        <img src="/images/andaman.jpg" alt="Andaman Islands" />
+        <h3>Andaman Islands</h3>
+        <p>
+          Includes coral reef restoration, research, and biodiversity
+          preservation projects.
+        </p>
+      </div>
+      <div class="location-box">
+        <img src="/images/gujarat.jpg" alt="Gujarat" />
+        <h3>Gujarat</h3>
+        <p>
+          Our initiatives here focus on launching marine megafauna response
+          teams and conservation plans.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-bottom">
+        <p>&copy; 2024 AquaAid. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .querySelector(".scroll-arrow")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelector("#boxes-section")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+    </script>
+  </body>
+</html>

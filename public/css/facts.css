@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Product Section Styling */
+.product-section {
+    padding: 50px 10%;
+    background-color: #fff;
+}
+
+/* Heading Section Styling */
+.heading-container {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.heading-container h1 {
+    font-size: 2.2em;
+    color: #333;
+    font-weight: normal;
+}
+
+/* Product Card Styling (2x2 Grid Layout) */
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between the cards */
+}
+
+.product-card {
+    display: flex; /* Flex layout to place image and content side by side */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for the box */
+    border-radius: 5px; /* Soft rounded corners */
+    align-items: center; /* Vertically center image and text */
+}
+
+.product-card img {
+    width: 120px; /* Adjust image size to be smaller */
+    height: auto;
+    margin-right: 20px; /* Space between image and text */
+}
+
+.product-info {
+    flex-grow: 1; /* Ensures the content takes up remaining space */
+}
+
+.product-info h4 {
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.product-info p {
+    font-size: 0.9em;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Hidden class for hidden product cards */
+.hidden {
+    display: none;
+}
+
+/* View More Button Styling */
+.view-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-view-more {
+    background-color: #0056e0;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.btn-view-more:hover {
+    background-color: #003f99;
+    cursor: pointer;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .product-container {
+        grid-template-columns: 1fr; /* Switch to single column layout for smaller screens */
+    }
+
+    .product-card img {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}

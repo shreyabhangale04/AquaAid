@@ -1,0 +1,233 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #e6f2ff; /* Light sea blue background for ocean theme */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url("/images/logo.png") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  padding-top: 100px;
+  animation: fadeIn 2s;
+  position: relative;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+.scroll-arrow {
+  font-size: 2.5rem;
+  color: #fff;
+  position: absolute;
+  bottom: 50px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+.scroll-arrow:hover {
+  color: #ffde59;
+}
+
+/* Main Content Container */
+.main-container {
+  padding: 50px 40px;
+  background-color: #f4faff;
+}
+
+/* Box Containers */
+.box-container {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.box-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Volunteer Section */
+.volunteer,
+.donate,
+.join {
+  text-align: center;
+}
+
+.volunteer h2,
+.donate h2,
+.join h2 {
+  font-size: 3.5rem;
+  color: #012954;
+  margin-bottom: 20px;
+}
+
+.volunteer p,
+.donate p,
+.join p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  color: #555;
+}
+
+/* Button Styling */
+.btn {
+  background-color: #012954;
+  color: #fff;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffde59;
+  color: #012954;
+  transform: translateY(-3px);
+}
+
+/* Donation Section */
+.donate-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.donate-image {
+  flex: 1;
+  max-width: 50%; /* Adjust the size of the image to be smaller */
+  margin: 0;
+}
+
+.donate-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* Ensures the image covers the entire area */
+  border-radius: 10px;
+}
+
+.donate-content {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donate-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+.donate-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Join the Cause Section with Indian Water Bodies Image */
+.join-image {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.join-image img {
+  width: 50%; /* Adjust the size of the image */
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.join-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  .donate-container {
+    flex-direction: column;
+  }
+
+  .donate-content {
+    padding: 30px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .box-container {
+    margin-bottom: 30px;
+  }
+
+  .donate-image {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .join-image img {
+    width: 100%; /* Full width for smaller screens */
+  }
+}

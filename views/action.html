@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Take Action - Save Our Shores</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/action.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div>
+        <h1>Guardians of the Sea</h1>
+        <p>Protecting Marine Life for a Sustainable Future</p>
+        <a href="#volunteer" class="scroll-arrow"
+          ><i class="fas fa-arrow-down"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+      <section id="volunteer" class="volunteer box-container">
+        <h2>Volunteer</h2>
+        <p>
+          Join our passionate community of volunteers committed to cleaning our
+          beaches and protecting marine life. Your time and effort can make a
+          big impact on the environment and help preserve our shores for future
+          generations. Be part of the solution—volunteer today!
+        </p>
+        <button class="btn" id="volunteer-btn">Join Today</button>
+      </section>
+
+      <section id="donate" class="donate box-container">
+        <div class="donate-container">
+          <div class="donate-image">
+            <img src="/images/lhs.jpg" alt="Beach Image" />
+          </div>
+          <div class="donate-content">
+            <h2>Make a Donation</h2>
+            <p>
+              Your donation helps support beach cleanups, conservation efforts,
+              and public awareness campaigns. Every contribution counts!
+            </p>
+            <button class="btn" id="donate-btn">Donate Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="join box-container">
+        <h2>Join the Cause</h2>
+        <p>
+          Be part of a growing community that cares about our beaches and
+          oceans. Sign up today and stay informed about our activities.
+        </p>
+        <div class="join-image">
+          <img src="/images/India.jpg" alt="Indian Water Bodies" />
+        </div>
+        <button class="btn" id="join-btn">Sign Up</button>
+      </section>
+    </div>
+
+    <script>
+      // Open the donation link when the donate button is clicked
+
+      document
+        .getElementById("volunteer-btn")
+        .addEventListener("click", function () {
+          window.location.href = "http://localhost:3400";
+        });
+
+      document
+        .getElementById("donate-btn")
+        .addEventListener("click", function () {
+          window.location.href = "https://kjscefees.com/login.aspx";
+        });
+
+      document
+        .getElementById("join-btn")
+        .addEventListener("click", function () {
+          window.location.href = "http://localhost:3400";
+        });
+
+      // Smooth scrolling effect when clicking on arrow or buttons
+      document.querySelectorAll("a.scroll-arrow").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
