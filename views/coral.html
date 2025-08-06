@@ -28,7 +28,7 @@
             Coral reefs are the rainforests of the sea, home to 25% of all
             marine life. Join us in our fight to protect them.
           </p>
-          <a href="#boxes-section" class="scroll-arrow"
+          <a href="#coral-reef" class="scroll-arrow"
             ><i class="fas fa-arrow-down"></i
           ></a>
         </div>
@@ -39,7 +39,7 @@
       <div class="reef-image">
         <img src="/images/coralsbg.jpg" alt="Coral Reefs Beach" />
       </div>
-      <div class="reef-content">
+      <div class="reef-content" id="coral-reef">
         <h1>Coral Reefs</h1>
         <p>
           Coral reefs are the rainforests of the sea, home to 25% of all marine
@@ -160,7 +160,7 @@
         .addEventListener("click", function (e) {
           e.preventDefault();
           document
-            .querySelector("#boxes-section")
+            .querySelector("#coral-reef")
             .scrollIntoView({ behavior: "smooth" });
         });
     </script>
